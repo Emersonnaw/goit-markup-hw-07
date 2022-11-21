@@ -343,15 +343,14 @@ ul {
 }   
 
 /* What are we doing */
-.back-our-works {
+.what-we-do {
     background-color:var( --contrast-color) ;
 }
 
-.our-work {
-    margin-bottom: 50px;
-
+.what-we-do__title {
+    
     color:var(--main-color-text);
-
+    
     font-weight: 700;
     font-size: 36px;
     line-height: calc(42/36);
@@ -359,20 +358,27 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.our-work-list {
+.what-we-do__title--margin {
+    margin-bottom: 50px;
+}
+
+.what-we-do__list {
     display: flex;
 }
 
-.work-items {
-    margin-right: 30px;
+.what-we-do__items {
     position: relative;
 }
+.what-we-do__items--right:not(:last-child) {
+     margin-right: 30px;
 
-.work-img {
+ }
+
+.what-we-do__img {
     display: block;
 }
 
-.blur-our-work {
+.what-we-do__blur  {
     width: 370px;
     height: 70px;
     position: absolute;
@@ -382,7 +388,7 @@ ul {
     background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8));
 }
 
-.blur-text {
+.what-we-do__text {
    position: absolute;
    left: 50%;
    top: 50%;
