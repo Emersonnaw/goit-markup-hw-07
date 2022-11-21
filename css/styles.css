@@ -29,6 +29,7 @@
    
     text-align: center;
 }
+
 body {
     color:var(--main-color-text);
     background-color:var(--main-background-color); 
@@ -53,17 +54,6 @@ ul {
     padding: 0;
 }
 
-/* add efects  */
-.link:hover,
-.link:focus {
-    color:var(--accent-color);    
-}
-
-/* remove the underline */
-.link-decorate {
-    text-decoration: none;
-}
-
 .container {
     padding-right: 15px;
     padding-left: 15px;
@@ -78,15 +68,21 @@ ul {
     padding-bottom: 94px;
 }
 
+/* add efects  */
+.link:hover,
+.link:focus {
+    color:var(--accent-color);    
+}
+
 /* ---------------
         HEADER 
    --------------- */
-.header-background{   
+.header {   
     background-color:var(--contrast-color) ;
     border-bottom: 1px solid #ECECEC;
 }
 
-.head-nav {
+.header__nav {
     display: flex;
     align-items: center;    
 } 
@@ -96,17 +92,20 @@ ul {
     align-items: center;
 }
 
-.logo-header {
+.logo {
     padding-top: 24px;
     padding-bottom: 25px;
-    margin-right: 93px;
-
+    
     font-size: 26px;
     line-height: calc(31/26);
     text-decoration: none; 
 }
 
-.logo-web {
+.nav-links__logo {
+    margin-right: 93px;
+}
+
+.logo__web {
     color:var(--accent-color);
 
     font-family: 'Raleway', sans-serif;
@@ -116,7 +115,7 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.logo-studio {
+.logo__studio {
     color:var(--logo-studio-color);
 
     font-family: 'Raleway', sans-serif;
@@ -126,15 +125,15 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.site-nav {
+.nav-links__site-nav {
     display: flex;
 }
 
-.nav-item:not(:last-child) {
+.nav-links__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.link-text {
+.nav-links__text {
     display: block;
     position: relative;
     padding-top: 32px;
@@ -153,12 +152,12 @@ ul {
 }
 
 /* add marker active page */
-.link-text.active {
+.nav-links__text.nav-links__text--active {
     color:var(--accent-color); 
 }
 
 /* drove line under links */
-.link-text.active::after {
+.nav-links__text.nav-links__text--active::after {
     content: "";
     display: block;
     width: 100%;
@@ -173,14 +172,17 @@ ul {
 
 .contacts {
     display: flex;
+}
+
+.header__contacts {
     margin-left: auto;  
 }
 
-.item:not(:last-child){
-    margin-right: 50px;
+.contacts__links:not(:last-child){
+    margin-right: 30px;
 }
 
-.link-color {
+.contacts_text {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -190,16 +192,19 @@ ul {
     font-weight: 500;  
     line-height: calc(16/14);
     letter-spacing: 0.02em;
+    text-decoration: none;
 
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-icon {
-    margin-right: 10px;
-
+.contacts__icon {
     fill: currentColor;
+}
+
+.contacts__icon--gap {
+    margin-right: 10px;
 }
 
 /* --------------
