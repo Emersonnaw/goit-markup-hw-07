@@ -12,37 +12,50 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header class="header-background"> 
-        <div class="container head-nav">
+    <header class="header"> 
+        <div class="container header__container">
             <nav class="nav-links"> 
-                <a class=" logo-header" href="./index.html" ><span class="logo-web">Web</span> <span class="logo-studio">Studio</span> </a>  
-                <ul class="site-nav">
-                    <li class="nav-item"><a href="./index.html" class="link  link-text ">Студія</a></li>
-                    <li class="nav-item"><a href="./portfolio.html" class="link link-text active">Портфоліо</a></li>
-                    <li class="nav-item"><a href="" class="link  link-text">Контакти</a></li>
+                <a class="logo nav-links__logo " href="./index.html" >
+                    <span class="logo__web">Web</span> 
+                    <span class="logo__studio">Studio</span>
+                </a>  
+                <ul class="nav-links__site-nav">
+                    <li class="nav-links__item">
+                        <a href="./index.html" class="link  nav-links__text ">
+                            Студія
+                        </a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a href="./portfolio.html" class="link  nav-links__text nav-links__text--active">
+                             Портфоліо
+                        </a>
+                    </li>
+                    <li class="nav-links__item">
+                        <a href="" class="link  nav-links__text">
+                             Контакти
+                        </a>
+                     </li>
                 </ul>
             </nav>
-            <ul class="contacts">
-                <li class="item">
-                    <a href="mailto:info@devstudio.com" class=" link link-decorate  link-color">
-                        <svg class="nav-icon" width = "16" height ="12" >
-                             <use href ="./images/nav-social-sprite.svg#icon-envelope" >
-
-                            </use>
+            <ul class="contacts header__contacts">
+                <li class="contacts__links">
+                    <a href="mailto:info@devstudio.com" class=" link contacts_text">
+                        <svg class="contacts__icon contacts__icon--gap" width = "16" height ="12" >
+                             <use href ="./images/nav-social-sprite.svg#icon-envelope" ></use>
                         </svg>
-                    info@devstudio.com
-                    </a></li>
-                <li class="item"><a href="tel:+380961111111"  class=" link link-decorate link-color">
-                    <svg class="nav-icon" width = "10" height ="16" >
-                        <use href ="./images/nav-social-sprite.svg#icon-smartphone" >
-
-                       </use>
-                   </svg>
-                    +38 096 111 11 11</a>
+                        info@devstudio.com
+                    </a>
+                </li>
+                <li class="contacts__links"><a href="tel:+380961111111"  class=" link contacts_text">
+                        <svg class="contacts__icon contacts__icon--gap " width = "10" height ="16" >
+                              <use href ="./images/nav-social-sprite.svg#icon-smartphone" ></use>
+                        </svg>
+                        +38 096 111 11 11
+                    </a>
                 </li>
                
             </ul>
-   </header>  
+   </header> 
     <main>
         <section class="section-portfolio back-portfolio">
             <div class="container">
