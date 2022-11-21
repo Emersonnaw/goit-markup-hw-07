@@ -93,15 +93,14 @@ ul {
 }
 
 .logo {
-    padding-top: 24px;
-    padding-bottom: 25px;
-    
     font-size: 26px;
     line-height: calc(31/26);
     text-decoration: none; 
 }
 
 .nav-links__logo {
+    padding-bottom: 25px;
+    padding-top: 24px;
     margin-right: 93px;
 }
 
@@ -216,14 +215,11 @@ ul {
     padding-bottom: 200px;
     
 }
-.hero-title {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+.hero-section__title {
     width: 696px;
-
+    
     color:var(--contrast-color);
-
+    
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60/44);
@@ -232,33 +228,35 @@ ul {
     text-transform: uppercase;
 }
 
+.hero-section__title--margin {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
 /* Hero button */
-.flex-utilit {
+.hero-section__flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.btn-wiev {
-    color:var(--contrast-color);
-    
-    font-weight: 700;
-    font-size: 16px;
-    font-family:inherit;
-    line-height: calc(30/16);
-    text-align: center; 
-}
-
-.btn {
+.btn-hero {
     padding: 10px 32px ;
     width: 216px;
     border: none;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
    
+    color:var(--contrast-color);
     background-color:  var(--accent-color);
-
     cursor: pointer;
+    
+    font-weight: 700;
+    font-size: 16px;
+    font-family:inherit;
+    line-height: calc(30/16);
+    text-align: center; 
 
     transition-property: background-color;
     transition-duration: 250ms;
@@ -267,13 +265,13 @@ ul {
 } 
 
 /* Effects hiro button */
-.btn:hover,
-.btn:focus {
+.btn-hero:hover,
+.btn-hero:focus {
     background-color:var(--focus-btn-hero );
 }
 
 /* section peculiarities background */
-.back-peculiarities {
+.peculiarities {
     background-color:var( --contrast-color) ;
     padding-bottom: 0px;
 }
@@ -294,32 +292,33 @@ ul {
 }
 
 /* Benefits Flex */
-.benefits {
+.peculiarities__list {
     display: flex;
 }
 
-.benefits-list:not(:last-child) {
+.peculiarities__item:not(:last-child) {
     margin-right: 30px;
 }
 
 /* Icons for benefits */
-.icon-benefit {
+.peculiarities__icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:30px ;
     width: 270px;
     height: 120px;
     border-radius: 4px;
-
+    
     background: var(--our-team-background);
 }
 
+.peculiarities__icon--margin-bottom {
+    margin-bottom:30px ;
+}
 /* Benefits title style */
-.benefits-title {
-    margin-bottom: 10px;
+.peculiarities__title{
     width: 270px;
-
+    
     color:var(--main-color-text);
     
     font-weight: 700;
@@ -327,6 +326,10 @@ ul {
     line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
+
+.peculiarities__title--margin-bottom {
+    margin-bottom: 10px;
 }
 
 /*features -discription  */
@@ -560,7 +563,7 @@ ul {
 /* -------------- */
 
 /* givinf background footer  */
-.footer-background {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -570,19 +573,20 @@ ul {
 }
 
 /* align 2 div  for line*/
-.align-div {
+.footer_container {
     display: flex;
     align-items: baseline;
     gap: 70px;  
 }
 
-.logo-footer-link {
+.footer_logo {
     display: block;
     margin-bottom: 20px ;
     
-    font-size: 26px;
-    line-height: calc(31/26);
-    text-decoration: none;    
+}
+
+.logo__studio--white {
+    color: var(--contrast-color);
 }
 
 /* Second peace logo with footer */
@@ -597,15 +601,15 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.addres-link {
+.address {
     font-style: normal;
 }
 
-.footer-links:not(:last-child) {
+.address__link:not(:last-child) {
     margin-bottom: 9px;
 }
 
-.link-addres-footer {
+.addres__footer {
     color:var(--contrast-color);
    
     line-height: calc(24/14);
@@ -617,7 +621,7 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-footer {
+.address__link-footer {
     color: rgba(255, 255, 255, 0.6);
 
     font-size: 14px;
@@ -631,11 +635,10 @@ ul {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-title {
-    margin-bottom: 20px;
-
+.footer__title {
+    
     color:var(--contrast-color);
-
+    
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -644,12 +647,16 @@ ul {
     text-transform: uppercase;
 }
 
-.footer-icon {
+.footer__title--margin-bottom {
+    margin-bottom: 20px;   
+}
+
+.footer__subscribe-list {
     display: flex;
     gap: 10px;
 }
 
-.footer-links-social {
+.subscribe-list__link {
     display: flex ;
     justify-content: center;
     align-items: center;
@@ -667,24 +674,37 @@ ul {
     cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon {
+.subscribe-list__icon {
     fill:currentColor;
 }
 
-.footer-links-social:hover,
-.footer-links-social:focus {
+.subscribe-list__link:hover,
+.subscribe-list__link:focus {
     background-color: var(--accent-color);
 }  
 
 /* --------------------------
  Footer FORM
 ----------------------------- */
+.form-field__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--contrast-color);
+}
+
+.title--margin-bottom {
+    margin-bottom: 20px;
+}
+
 .form-label {
     display:flex;
 }
 
-.form-input {
-    margin-right: 12px;
+.form-field__input {
     padding-left: 16px;
     min-width: 358px;
     height: 50px;
@@ -693,9 +713,9 @@ ul {
     
     background-color: inherit;
     color: rgba(255, 255, 255, 0.6);
-
+    
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
- 
+    
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -703,7 +723,11 @@ ul {
     letter-spacing: 0.03em;
 }
 
-.form-input::placeholder {    
+.input--margin-right{
+    margin-right: 12px;
+}
+
+.form-field__input::placeholder {    
     padding-top: 15px;
     padding-bottom: 15px;
 
@@ -716,7 +740,7 @@ ul {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.form-btn {
+.form-field__form-btn {
     position: relative;
     display: flex;
     align-items: center;
@@ -741,7 +765,7 @@ ul {
     line-height: calc(30/16);
 }
 
-.telega-icon {
+.form-field__icon {
     position: absolute;
     right: 28px;
     top: 50%;
