@@ -1,0 +1,42 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color:var( --background-header-footer);
+
+    text-align: left;
+}
+
+
+.footer_container {
+    display: flex;
+    align-items: baseline;
+    gap: 70px;  
+}
+
+.footer_logo {
+    display: block;
+    margin-bottom: 20px ;
+    
+}
+
+.footer__title {
+    
+    color:var(--contrast-color);
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer__title--margin-bottom {
+    margin-bottom: 20px;   
+}
+
+.footer__subscribe-list {
+    display: flex;
+    gap: 10px;
+}
