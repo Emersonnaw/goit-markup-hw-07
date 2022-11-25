@@ -2,10 +2,10 @@
     font-size: 26px;
     line-height: calc(31/26);
     text-decoration: none; 
-}
 
 
-.logo__web {
+
+&__web {
     color:var(--accent-color);
 
     font-family: 'Raleway', sans-serif;
@@ -15,7 +15,7 @@
     letter-spacing: 0.03em;
 }
 
-.logo__studio {
+&__studio {
     color:var(--logo-studio-color);
 
     font-family: 'Raleway', sans-serif;
@@ -24,4 +24,4 @@
     line-height: calc(31/26);
     letter-spacing: 0.03em;
 }
-
+}

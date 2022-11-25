@@ -68,7 +68,6 @@ ul {
   line-height: 1.1923076923;
   text-decoration: none;
 }
-
 .logo__web {
   color: var(--accent-color);
   font-family: "Raleway", sans-serif;
@@ -77,7 +76,6 @@ ul {
   line-height: 1.1923076923;
   letter-spacing: 0.03em;
 }
-
 .logo__studio {
   color: var(--logo-studio-color);
   font-family: "Raleway", sans-serif;
@@ -94,24 +92,22 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /* add marker active page */
+  /* drove line under links */
 }
-
 .nav-links__logo {
   padding-bottom: 25px;
   padding-top: 24px;
   margin-right: 93px;
 }
-
 .nav-links__site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-
 .nav-links__item:not(:last-child) {
   margin-right: 50px;
 }
-
 .nav-links__text {
   display: block;
   position: relative;
@@ -129,13 +125,9 @@ ul {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* add marker active page */
 .nav-links__text.nav-links__text--active {
   color: var(--accent-color);
 }
-
-/* drove line under links */
 .nav-links__text.nav-links__text--active::after {
   content: "";
   display: block;

@@ -5,22 +5,22 @@
     background-color:var( --background-header-footer);
 
     text-align: left;
-}
 
 
-.footer_container {
+
+&_container {
     display: flex;
     align-items: baseline;
     gap: 70px;  
 }
 
-.footer_logo {
+&_logo {
     display: block;
     margin-bottom: 20px ;
     
 }
 
-.footer__title {
+&__title {
     
     color:var(--contrast-color);
     
@@ -32,11 +32,12 @@
     text-transform: uppercase;
 }
 
-.footer__title--margin-bottom {
+&__title--margin-bottom {
     margin-bottom: 20px;   
 }
 
-.footer__subscribe-list {
+&__subscribe-list {
     display: flex;
     gap: 10px;
+}
 }

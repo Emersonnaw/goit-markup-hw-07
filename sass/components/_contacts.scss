@@ -1,16 +1,16 @@
 .contacts {
     display: flex;
-}
+
 
 .header__contacts {
     margin-left: auto;  
 }
 
-.contacts__links:not(:last-child){
+&__links:not(:last-child){
     margin-right: 30px;
 }
 
-.contacts_text {
+&_text {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -27,10 +27,11 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts__icon {
+&__icon {
     fill: currentColor;
 }
 
-.contacts__icon--gap {
+&__icon--gap {
     margin-right: 10px;
+}
 }

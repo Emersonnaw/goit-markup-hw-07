@@ -1,18 +1,18 @@
 .peculiarities {
     background-color:var( --contrast-color) ;
     padding-bottom: 0px;
-}
+
 /* Benefits Flex */
-.peculiarities__list {
+&__list {
     display: flex;
 }
 
-.peculiarities__item:not(:last-child) {
+&__item:not(:last-child) {
     margin-right: 30px;
 }
 
 /* Icons for benefits */
-.peculiarities__icon {
+&__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,11 +23,11 @@
     background: var(--our-team-background);
 }
 
-.peculiarities__icon--margin-bottom {
+&__icon--margin-bottom {
     margin-bottom:30px ;
 }
 /* Benefits title style */
-.peculiarities__title{
+&__title{
     width: 270px;
     
     color:var(--main-color-text);
@@ -39,12 +39,12 @@
     text-transform: uppercase;
 }
 
-.peculiarities__title--margin-bottom {
+&__title--margin-bottom {
     margin-bottom: 10px;
 }
 
 /*features -discription  */
-.peculiarities-text {
+&-text {
     width: 270px;
     
     color:var(--interactive-element-color);
@@ -52,3 +52,4 @@
     line-height: calc(24/14);
     letter-spacing: 0.03em;
 }   
+}

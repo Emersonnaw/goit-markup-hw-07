@@ -14,13 +14,14 @@
     transition-duration: 250ms;
     transition-timing-function:
     cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.subscribe-list__icon {
+
+&__icon {
     fill:currentColor;
 }
 
-.subscribe-list__link:hover,
-.subscribe-list__link:focus {
+&__link:hover,
+&__link:focus {
     background-color: var(--accent-color);
 }  
+}

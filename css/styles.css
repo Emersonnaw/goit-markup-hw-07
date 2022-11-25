@@ -1211,7 +1211,7 @@ letter-spacing: 0.03em;
     line-height: calc(36/18);
 
     
-}
+} */
 
 .software-items { 
     color:var(--interactive-element-color);    
@@ -1219,4 +1219,5 @@ letter-spacing: 0.03em;
     font-size: 16px;
     line-height: calc(30/16);
     letter-spacing: 0.03em;
-} */
+} 
+
